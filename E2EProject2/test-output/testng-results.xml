@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-09T10:41:57 TRT" name="Default suite" finished-at="2022-06-09T10:42:17 TRT" duration-ms="19429">
+  <suite started-at="2022-06-09T16:26:49 TRT" name="Default suite" finished-at="2022-06-09T16:27:25 TRT" duration-ms="35902">
     <groups>
     </groups>
-    <test started-at="2022-06-09T10:41:57 TRT" name="Default test" finished-at="2022-06-09T10:42:17 TRT" duration-ms="19429">
+    <test started-at="2022-06-09T16:26:49 TRT" name="Default test" finished-at="2022-06-09T16:27:25 TRT" duration-ms="35902">
       <class name="Academy.homapage">
-        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.homapage@2a65fe7c]" started-at="2022-06-09T10:41:57 TRT" name="BasePageNavigation" finished-at="2022-06-09T10:42:17 TRT" duration-ms="19372" status="PASS">
+        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.homapage@689604d9]" started-at="2022-06-09T16:26:49 TRT" name="BasePageNavigation" finished-at="2022-06-09T16:27:25 TRT" duration-ms="35658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
