@@ -16,6 +16,7 @@ public class base {
 	
 	public WebDriver driver;
 	
+	@SuppressWarnings("deprecation")
 	public WebDriver initializeDriver() throws IOException {
 
 		// chrome
