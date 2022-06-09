@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 public class homapage extends base {
 
 	@Test
-	
 	public void BasePageNavigation() throws IOException 
 	{
 		driver = initializeDriver();
