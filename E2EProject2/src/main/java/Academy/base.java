@@ -11,6 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+@SuppressWarnings("unused")
 public class base {
 	
 	public WebDriver driver;
@@ -26,24 +27,30 @@ public class base {
 		String browserName = prop.getProperty("browser");
 		System.out.println(browserName);
 
-		if (browserName.equals("chrome")) {
+		if (browserName.equals("chrome")) 
+		{
 			// execute chrome
 			System.setProperty("webdriver.chrome.driver",
 					"C:\\Users\\frkyz\\OneDrive\\Belgeler\\chromedriver_win32\\chromedriver.exe");
-			new ChromeDriver();
-		} else if (browserName.equals("firefox")) {
+			driver = new ChromeDriver();
+		} 
+		else if (browserName.equals("firefox")) 
+		{
 			// execute firefox
 			System.setProperty("webdriver.gecko.driver",
 					"C:\\Users\\frkyz\\OneDrive\\Belgeler\\geckodriver-v0.31.0-win64\\geckodriver.exe");
-			new FirefoxDriver();
-		} else if (browserName.equals("edge")) {
+			driver = new FirefoxDriver();
+		}
+		else if (browserName.equals("edge")) 
+		{
 			// execute edge
 			System.setProperty("webdriver.edge.driver",
 					"C:\\Users\\frkyz\\OneDrive\\Belgeler\\edgedriver_win64\\msedgedriver.exe");
-			new EdgeDriver();
+			driver = new EdgeDriver();
 		}
-		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		return driver;
 	}
+
+	
 }
