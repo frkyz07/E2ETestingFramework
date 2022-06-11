@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-09T16:26:49 TRT" name="Default suite" finished-at="2022-06-09T16:27:25 TRT" duration-ms="35902">
+  <suite started-at="2022-06-11T21:32:38 TRT" name="Default suite" finished-at="2022-06-11T21:33:10 TRT" duration-ms="32421">
     <groups>
     </groups>
-    <test started-at="2022-06-09T16:26:49 TRT" name="Default test" finished-at="2022-06-09T16:27:25 TRT" duration-ms="35902">
-      <class name="Academy.homapage">
-        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.homapage@689604d9]" started-at="2022-06-09T16:26:49 TRT" name="BasePageNavigation" finished-at="2022-06-09T16:27:25 TRT" duration-ms="35658" status="PASS">
+    <test started-at="2022-06-11T21:32:38 TRT" name="Default test" finished-at="2022-06-11T21:33:10 TRT" duration-ms="32421">
+      <class name="Academy.validateTitle">
+        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@2a3b5b47]" started-at="2022-06-11T21:32:38 TRT" name="BasePageNavigation" finished-at="2022-06-11T21:33:10 TRT" duration-ms="32376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-      </class> <!-- Academy.homapage -->
+      </class> <!-- Academy.validateTitle -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

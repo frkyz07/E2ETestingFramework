@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Academy.homapage">
+      <class name="Academy.validateTitle">
         <methods>
           <include name="BasePageNavigation"/>
         </methods>
-      </class> <!-- Academy.homapage -->
+      </class> <!-- Academy.validateTitle -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -22,7 +22,7 @@ public class base {
 		// chrome
 		Properties prop = new Properties();
 		FileInputStream fis = new FileInputStream(
-				"C:\\Users\\frkyz\\git\\e2etesting\\E2EProject2\\src\\main\\java\\Academy\\data.properties");
+				"C:\\Users\\frkyz\\git\\e2etesting\\E2EProject2\\src\\main\\java\\resources\\data.properties");
 
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
