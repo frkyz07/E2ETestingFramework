@@ -29,7 +29,7 @@ public class LandingPage {
 	public WebElement navBar() {
 		return driver.findElement(navbar);
 	}
-	public WebElement popUp() {
+	public WebElement popUpClose() {
 		return driver.findElement(pop_up);
 	}
 }

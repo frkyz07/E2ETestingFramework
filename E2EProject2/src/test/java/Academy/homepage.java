@@ -1,8 +1,10 @@
 package Academy;
 
 import java.io.IOException;
-
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -11,27 +13,37 @@ import pageObjects.LoginPage;
 import resources.base;
 
 public class homepage extends base {
-
+	public static Logger log = LogManager.getLogger(base.class.getName());
+	@BeforeTest
+	public void initialize() throws IOException
+	{
+		driver=initializeDriver();
+		
+	}
+	
 	@Test(dataProvider = "getData")
 	public void BasePageNavigation(String username, String password) throws IOException {
-		driver = initializeDriver();
-		String new_url = prop.getProperty("url");
-		System.out.println(new_url);
-		driver.get(new_url);
 		// one is inheritance
 		// creating object of the class
+		
+		driver.get(prop.getProperty("url"));
 		LandingPage l = new LandingPage(driver);
-		l.popUp().click();
+		l.popUpClose().click();
 		l.getLogin().click(); // it is the same with using by.cssseletor.
 		LoginPage lp = new LoginPage(driver);
 		lp.getEmail().sendKeys(username);
 		lp.getPassword().sendKeys(password);
 		// System.out.println(text);
 		lp.getLoginClick().click();
-		driver.quit();
-		
+		log.info("Login done");
 
 	}
+	@AfterTest
+	public void destroyIt() 
+	{
+		driver.quit();
+	}
+	
 
 	@DataProvider
 	public Object[][] getData() {

@@ -1,51 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-12T11:09:57 TRT" name="Suite" finished-at="2022-06-12T11:11:10 TRT" duration-ms="73133">
+  <suite started-at="2022-06-12T19:07:18 TRT" name="Suite" finished-at="2022-06-12T19:07:44 TRT" duration-ms="26980">
     <groups>
     </groups>
-    <test started-at="2022-06-12T11:09:57 TRT" name="Test" finished-at="2022-06-12T11:11:10 TRT" duration-ms="73133">
+    <test started-at="2022-06-12T19:07:18 TRT" name="Default test" finished-at="2022-06-12T19:07:44 TRT" duration-ms="26980">
       <class name="Academy.validateTitle">
-        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@333291e3]" started-at="2022-06-12T11:10:48 TRT" name="BasePageNavigation" finished-at="2022-06-12T11:11:10 TRT" duration-ms="22716" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@2c532cd8]" started-at="2022-06-12T19:07:18 TRT" name="initialize" finished-at="2022-06-12T19:07:44 TRT" duration-ms="26535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@2c532cd8]" started-at="2022-06-12T19:07:44 TRT" name="BasePageNavigation" finished-at="2022-06-12T19:07:44 TRT" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
+        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@2c532cd8]" started-at="2022-06-12T19:07:44 TRT" name="destroyIt" finished-at="2022-06-12T19:07:44 TRT" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- destroyIt -->
       </class> <!-- Academy.validateTitle -->
-      <class name="Academy.homepage">
-        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@56620197]" started-at="2022-06-12T11:09:57 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-12T11:10:24 TRT" duration-ms="26916" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestirceduser@mail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BasePageNavigation -->
-        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@56620197]" started-at="2022-06-12T11:10:24 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-12T11:10:48 TRT" duration-ms="23449" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restirceduser@mail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[654321]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BasePageNavigation -->
-      </class> <!-- Academy.homepage -->
-    </test> <!-- Test -->
+    </test> <!-- Default test -->
   </suite> <!-- Suite -->
 </testng-results>
