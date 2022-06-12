@@ -2,7 +2,6 @@ package Academy;
 
 import java.io.IOException;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -14,12 +13,13 @@ public class validateTitle extends base {
 	@Test
 	public void BasePageNavigation() throws IOException {
 		driver = initializeDriver();
-		System.out.println(prop.getProperty("url"));
-		driver.get(prop.getProperty("url"));
+		String url = prop.getProperty("url");
+		System.out.println(url);
+		driver.get(url);
 		// one is inheritance
 		// creating object of the class
 		LandingPage l = new LandingPage(driver);
-		driver.findElement(By.xpath("//div//button[text()='NO THANKS']")).click();
+		l.popUp().click();
 		String title = l.getText().getText();
 		Assert.assertEquals(title, "FEATURED COURSES");
 		Assert.assertTrue(l.navBar().isDisplayed());

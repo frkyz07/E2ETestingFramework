@@ -21,14 +21,15 @@ public class homepage extends base {
 		// one is inheritance
 		// creating object of the class
 		LandingPage l = new LandingPage(driver);
-		driver.findElement(By.xpath("//div//button[text()='NO THANKS']")).click();
+		l.popUp().click();
 		l.getLogin().click(); // it is the same with using by.cssseletor.
 		LoginPage lp = new LoginPage(driver);
 		lp.getEmail().sendKeys(username);
 		lp.getPassword().sendKeys(password);
-		driver.quit();
 		// System.out.println(text);
 		lp.getLoginClick().click();
+		driver.quit();
+		
 
 	}
 
