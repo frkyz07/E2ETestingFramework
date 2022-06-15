@@ -1,6 +1,6 @@
 package resources;
 
-import java.io.File;
+import java.io.*; 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -31,7 +31,7 @@ public class base {
 
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
-		//String browserName = prop.getProperty("browser");
+		// String browserName = prop.getProperty("browser");
 		System.out.println(browserName);
 
 		if (browserName.equals("chrome")) {
@@ -53,13 +53,12 @@ public class base {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return driver;
 	}
-	
-	public void getScreenShotPath(String testCaseName, WebDriver driver) throws IOException
-	{
-		TakesScreenshot sh =  (TakesScreenshot) driver;
+
+	public void getScreenShotPath(String testCaseName, WebDriver driver) throws IOException {
+		TakesScreenshot sh = (TakesScreenshot) driver;
 		File source = sh.getScreenshotAs(OutputType.FILE);
-		String destinationFile = System.getProperty("user.dir")+"\\reports\\"+testCaseName+".png"; 
-		FileUtils.copyFile(source, new File(destinationFile)); 
+		String destinationFile = System.getProperty("user.dir") + "\\reports\\" + testCaseName + ".png";
+		FileUtils.copyFile(source, new File(destinationFile));
 	}
 
 }

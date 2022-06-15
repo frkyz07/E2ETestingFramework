@@ -16,18 +16,18 @@ import resources.base;
 public class homepage extends base {
 	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(base.class.getName());
+
 	@BeforeTest
-	public void initialize() throws IOException
-	{
-		driver=initializeDriver();
-		
+	public void initialize() throws IOException {
+		driver = initializeDriver();
+
 	}
-	
+
 	@Test(dataProvider = "getData")
 	public void BasePageNavigation(String username, String password) throws IOException {
 		// one is inheritance
 		// creating object of the class
-		
+
 		driver.get(prop.getProperty("url"));
 		LandingPage l = new LandingPage(driver);
 		l.popUpClose().click();
@@ -40,12 +40,11 @@ public class homepage extends base {
 		log.info("Login done");
 
 	}
+
 	@AfterTest
-	public void destroyIt() 
-	{
+	public void destroyIt() {
 		driver.quit();
 	}
-	
 
 	@DataProvider
 	public Object[][] getData() {

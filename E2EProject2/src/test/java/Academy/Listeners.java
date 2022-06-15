@@ -30,13 +30,13 @@ public class Listeners extends base implements ITestListener {
 		WebDriver driver = null;
 		String testMethodName = result.getMethod().getMethodName();
 		try {
-			driver=(WebDriver)result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
+			driver = (WebDriver) result.getTestClass().getRealClass().getField("driver").get(result.getInstance());
 		} catch (IllegalArgumentException | IllegalAccessException | NoSuchFieldException | SecurityException e1) {
 			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		try {
-			getScreenShotPath(testMethodName,driver);
+			getScreenShotPath(testMethodName, driver);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
