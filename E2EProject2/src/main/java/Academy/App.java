@@ -1,4 +1,4 @@
-package Academy;
+package main.java.Academy;
 
 /**
  * Hello world!

@@ -1,3 +1,4 @@
-22:19:54.493 [main] INFO  resources.base - Driver is Initialized
-22:20:22.756 [main] INFO  resources.base - Navigated to the home page
-22:20:23.010 [main] INFO  resources.base - Succesfully validated text messages
+20:41:17.246 [main] DEBUG freemarker.cache - TemplateLoader.findTemplateSource("commons/commons-inject-js_tr_TR.ftl"): Not found
+20:41:17.249 [main] DEBUG freemarker.cache - TemplateLoader.findTemplateSource("commons/commons-inject-js_tr.ftl"): Not found
+20:41:17.249 [main] DEBUG freemarker.cache - TemplateLoader.findTemplateSource("commons/commons-inject-js.ftl"): Found
+20:41:17.250 [main] DEBUG freemarker.cache - "commons/commons-inject-js.ftl"("tr_TR", UTF-8, parsed): using cached since jar:file:/C:/Users/frkyz/.m2/repository/com/aventstack/extentreports/4.1.4/extentreports-4.1.4.jar!/com/aventstack/extentreports/view/commons/commons-inject-js.ftl hasn't changed.

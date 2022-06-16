@@ -1,4 +1,4 @@
-package resources;
+package main.java.resources;
 
 import java.io.*; 
 import java.io.FileInputStream;
