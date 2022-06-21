@@ -3,15 +3,14 @@
 <suite name="Suite">
 	<listeners>
 		<listener class-name="Academy.Listeners" />
-    
-
 	</listeners>
-	<test thread-count="5" name="homepage">
+
+
+	<test name="homepage">
 		<classes>
 			<class name="Academy.homepage" />
-
 		</classes>
-	</test> <!-- Test -->
+	</test>
 	<test thread-count="5" name="validateTitle">
 		<classes>
 			<class name="Academy.validateTitle" />

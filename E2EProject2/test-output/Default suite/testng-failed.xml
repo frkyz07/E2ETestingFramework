@@ -6,6 +6,8 @@
       <class name="Academy.validateTitle">
         <methods>
           <include name="BasePageNavigation"/>
+          <include name="initialize"/>
+          <include name="destroyIt"/>
         </methods>
       </class> <!-- Academy.validateTitle -->
     </classes>

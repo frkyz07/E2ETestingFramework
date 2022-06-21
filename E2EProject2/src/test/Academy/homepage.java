@@ -13,6 +13,7 @@ import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import resources.base;
 
+@SuppressWarnings("unused")
 public class homepage extends base {
 	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(base.class.getName());
