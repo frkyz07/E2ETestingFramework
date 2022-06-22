@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-21T17:52:13 TRT" name="Suite" finished-at="2022-06-21T17:53:35 TRT" duration-ms="82733">
+  <suite started-at="2022-06-22T18:22:55 TRT" name="Suite" finished-at="2022-06-22T18:24:09 TRT" duration-ms="74803">
     <groups>
     </groups>
-    <test started-at="2022-06-21T17:52:13 TRT" name="homepage" finished-at="2022-06-21T17:53:13 TRT" duration-ms="59951">
+    <test started-at="2022-06-22T18:22:55 TRT" name="homepage" finished-at="2022-06-22T18:23:46 TRT" duration-ms="51157">
       <class name="Academy.homepage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.homepage@1e11bc55]" started-at="2022-06-21T17:52:13 TRT" name="initialize" finished-at="2022-06-21T17:52:15 TRT" duration-ms="2602" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.homepage@76f10035]" started-at="2022-06-22T18:22:55 TRT" name="initialize" finished-at="2022-06-22T18:22:57 TRT" duration-ms="2904" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@1e11bc55]" started-at="2022-06-21T17:52:15 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-21T17:52:45 TRT" duration-ms="29604" status="FAIL">
+        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@76f10035]" started-at="2022-06-22T18:22:57 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-22T18:23:24 TRT" duration-ms="26493" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -30,22 +30,22 @@
   (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'DESKTOP-392CL3Q', ip: '192.168.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'DESKTOP-392CL3Q', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [26129e68ed74dfd4188b054458dd68fa, findElement {using=xpath, value=//div//button[text()='NO THANKS']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\frkyz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61068/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 26129e68ed74dfd4188b054458dd68fa]]>
+Command: [a6d460b04a1648af1e1f505fda78c73a, findElement {using=xpath, value=//div//button[text()='NO THANKS']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\frkyz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51095/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6d460b04a1648af1e1f505fda78c73a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div//button[text()='NO THANKS']"}
   (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'DESKTOP-392CL3Q', ip: '192.168.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'DESKTOP-392CL3Q', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [26129e68ed74dfd4188b054458dd68fa, findElement {using=xpath, value=//div//button[text()='NO THANKS']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\frkyz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61068/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 26129e68ed74dfd4188b054458dd68fa
+Command: [a6d460b04a1648af1e1f505fda78c73a, findElement {using=xpath, value=//div//button[text()='NO THANKS']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\frkyz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51095/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6d460b04a1648af1e1f505fda78c73a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -98,7 +98,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@1e11bc55]" started-at="2022-06-21T17:52:45 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-21T17:53:12 TRT" duration-ms="26732" status="FAIL">
+        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@76f10035]" started-at="2022-06-22T18:23:24 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-22T18:23:45 TRT" duration-ms="20855" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -117,22 +117,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
   (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'DESKTOP-392CL3Q', ip: '192.168.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'DESKTOP-392CL3Q', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [26129e68ed74dfd4188b054458dd68fa, findElement {using=xpath, value=//div//button[text()='NO THANKS']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\frkyz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61068/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 26129e68ed74dfd4188b054458dd68fa]]>
+Command: [a6d460b04a1648af1e1f505fda78c73a, findElement {using=xpath, value=//div//button[text()='NO THANKS']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\frkyz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51095/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6d460b04a1648af1e1f505fda78c73a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div//button[text()='NO THANKS']"}
   (Session info: chrome=102.0.5005.115)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.2.1', revision: 'ac4d0fdd4a'
-System info: host: 'DESKTOP-392CL3Q', ip: '192.168.5.87', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'DESKTOP-392CL3Q', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [26129e68ed74dfd4188b054458dd68fa, findElement {using=xpath, value=//div//button[text()='NO THANKS']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\frkyz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61068/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 26129e68ed74dfd4188b054458dd68fa
+Command: [a6d460b04a1648af1e1f505fda78c73a, findElement {using=xpath, value=//div//button[text()='NO THANKS']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\frkyz\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:51095}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51095/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a6d460b04a1648af1e1f505fda78c73a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -185,23 +185,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.homepage@1e11bc55]" started-at="2022-06-21T17:53:12 TRT" name="destroyIt" finished-at="2022-06-21T17:53:13 TRT" duration-ms="321" status="PASS">
+        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.homepage@76f10035]" started-at="2022-06-22T18:23:45 TRT" name="destroyIt" finished-at="2022-06-22T18:23:46 TRT" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyIt -->
       </class> <!-- Academy.homepage -->
     </test> <!-- homepage -->
-    <test started-at="2022-06-21T17:53:13 TRT" name="validateTitle" finished-at="2022-06-21T17:53:35 TRT" duration-ms="22354">
+    <test started-at="2022-06-22T18:23:46 TRT" name="validateTitle" finished-at="2022-06-22T18:24:09 TRT" duration-ms="23033">
       <class name="Academy.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@41c07648]" started-at="2022-06-21T17:53:13 TRT" name="initialize" finished-at="2022-06-21T17:53:35 TRT" duration-ms="21889" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@4943defe]" started-at="2022-06-22T18:23:46 TRT" name="initialize" finished-at="2022-06-22T18:24:09 TRT" duration-ms="22700" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@41c07648]" started-at="2022-06-21T17:53:35 TRT" name="BasePageNavigation" finished-at="2022-06-21T17:53:35 TRT" duration-ms="143" status="PASS">
+        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@4943defe]" started-at="2022-06-22T18:24:09 TRT" name="BasePageNavigation" finished-at="2022-06-22T18:24:09 TRT" duration-ms="136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@41c07648]" started-at="2022-06-21T17:53:35 TRT" name="destroyIt" finished-at="2022-06-21T17:53:35 TRT" duration-ms="316" status="PASS">
+        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@4943defe]" started-at="2022-06-22T18:24:09 TRT" name="destroyIt" finished-at="2022-06-22T18:24:09 TRT" duration-ms="191" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyIt -->
