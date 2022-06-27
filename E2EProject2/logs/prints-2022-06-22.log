@@ -1,5 +1,7 @@
-18:23:46.760 [main] DEBUG freemarker.cache - TemplateLoader.findTemplateSource("spark/partials/exceptýon.ftl"): Not found
-18:23:46.768 [main] ERROR freemarker.runtime - Error executing FreeMarker template
+19:45:31.431 [main] DEBUG freemarker.cache - TemplateLoader.findTemplateSource("spark/partials/exceptýon_tr_TR.ftl"): Not found
+19:45:31.435 [main] DEBUG freemarker.cache - TemplateLoader.findTemplateSource("spark/partials/exceptýon_tr.ftl"): Not found
+19:45:31.437 [main] DEBUG freemarker.cache - TemplateLoader.findTemplateSource("spark/partials/exceptýon.ftl"): Not found
+19:45:31.442 [main] ERROR freemarker.runtime - Error executing FreeMarker template
 freemarker.core._MiscTemplateException: Template inclusion failed (for parameter value "partials/exceptýon.ftl"):
 Template not found for name "spark/partials/exceptýon.ftl".
 The name was interpreted by this TemplateLoader: ClassTemplateLoader(resourceLoaderClass=com.aventstack.extentreports.ExtentReports, basePackagePath="templates/" /* relatively to resourceLoaderClass pkg */).
