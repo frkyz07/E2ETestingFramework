@@ -11,7 +11,6 @@ public class LandingPage {
 	By signin = By.cssSelector("a[href*='sign_in']");
 	By text = By.xpath("//div//h2[text()='Featured Courses']");
 	By navbar = By.xpath("//div[@class='navbar navbar-default navbar-static-top']");
-	By pop_up = By.xpath("//div//button[text()='NO THANKS']");
 
 	public LandingPage(WebDriver driver) {
 
@@ -31,7 +30,5 @@ public class LandingPage {
 	public WebElement navBar() {
 		return driver.findElement(navbar);
 	}
-	public WebElement popUpClose() {
-		return driver.findElement(pop_up);
-	}
+
 }
