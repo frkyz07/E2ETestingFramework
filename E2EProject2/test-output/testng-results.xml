@@ -1,33 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-27T18:05:15 TRT" name="Suite" finished-at="2022-06-27T18:06:07 TRT" duration-ms="51712">
+  <suite started-at="2022-06-27T19:34:01 TRT" name="Suite" finished-at="2022-06-27T19:34:01 TRT" duration-ms="111">
     <groups>
     </groups>
-    <test started-at="2022-06-27T18:05:15 TRT" name="validateTitle" finished-at="2022-06-27T18:05:44 TRT" duration-ms="28989">
+    <test started-at="2022-06-27T19:34:01 TRT" name="validateTitle" finished-at="2022-06-27T19:34:01 TRT" duration-ms="104">
       <class name="Academy.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T18:05:15 TRT" name="initialize" finished-at="2022-06-27T18:05:44 TRT" duration-ms="28649" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T19:34:01 TRT" name="initialize" finished-at="2022-06-27T19:34:01 TRT" duration-ms="9" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+at resources.base.initializeDriver(base.java:32)
+at Academy.validateTitle.initialize(validateTitle.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T18:05:44 TRT" name="BasePageNavigation" finished-at="2022-06-27T18:05:44 TRT" duration-ms="136" status="PASS">
+        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T19:34:01 TRT" name="BasePageNavigation" finished-at="2022-06-27T19:34:01 TRT" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+at resources.base.initializeDriver(base.java:32)
+at Academy.validateTitle.initialize(validateTitle.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T18:05:44 TRT" name="destroyIt" finished-at="2022-06-27T18:05:44 TRT" duration-ms="183" status="PASS">
+        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T19:34:01 TRT" name="destroyIt" finished-at="1970-01-01T02:00:00 TRT" duration-ms="-1656347641145" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyIt -->
       </class> <!-- Academy.validateTitle -->
     </test> <!-- validateTitle -->
-    <test started-at="2022-06-27T18:05:15 TRT" name="homepage" finished-at="2022-06-27T18:06:07 TRT" duration-ms="51712">
+    <test started-at="2022-06-27T19:34:01 TRT" name="homepage" finished-at="2022-06-27T19:34:01 TRT" duration-ms="111">
       <class name="Academy.homepage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T18:05:15 TRT" name="initialize" finished-at="2022-06-27T18:05:18 TRT" duration-ms="2829" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T19:34:01 TRT" name="initialize" finished-at="2022-06-27T19:34:01 TRT" duration-ms="9" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+at resources.base.initializeDriver(base.java:32)
+at Academy.homepage.initialize(homepage.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T18:05:18 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-27T18:05:48 TRT" duration-ms="29709" status="PASS">
+        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T19:34:01 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-27T19:34:01 TRT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -40,10 +130,40 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+at resources.base.initializeDriver(base.java:32)
+at Academy.homepage.initialize(homepage.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T18:05:48 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-27T18:06:06 TRT" duration-ms="18739" status="PASS">
+        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T19:34:01 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-27T19:34:01 TRT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -56,10 +176,40 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
+at resources.base.initializeDriver(base.java:32)
+at Academy.homepage.initialize(homepage.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T18:06:06 TRT" name="destroyIt" finished-at="2022-06-27T18:06:07 TRT" duration-ms="373" status="PASS">
+        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T19:34:01 TRT" name="destroyIt" finished-at="1970-01-01T02:00:00 TRT" duration-ms="-1656347641157" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyIt -->

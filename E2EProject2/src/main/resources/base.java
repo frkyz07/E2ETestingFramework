@@ -24,7 +24,9 @@ public class base {
 				"C:\\Users\\frkyz\\git\\e2etesting\\E2EProject2\\src\\main\\resources\\data.properties");
 
 		prop.load(fis);
-		String browserName = prop.getProperty("browser");
+		// mvn test -Dbrowser=chrome
+		String browserName = System.getProperty("browser");
+		//String browserName = prop.getProperty("browser");
 		System.out.println(browserName);
 
 		if (browserName.equals("chrome")) {
@@ -33,10 +35,13 @@ public class base {
 			// execute in chrome driver
 
 		} else if (browserName.equals("firefox")) {
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\frkyz\\Downloads\\geckodriver-v0.31.0-win64\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			// firefox code
-		} else if (browserName.equals("IE")) {
-//	IE code
+			
+		} else if (browserName.equals("edge")) {
+			System.setProperty("webdriver.edge.driver", "C:\\Users\\frkyz\\Downloads\\edgedriver_win64 (1)\\msedgedriver.exe");
+			driver = new FirefoxDriver();
 		}
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

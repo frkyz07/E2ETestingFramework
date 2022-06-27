@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,31 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Academy.validateTitle" class="method navigator-link" hash-for-method="BasePageNavigation">BasePageNavigation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="Academy.homepage" class="method navigator-link" hash-for-method="BasePageNavigation(nonrestirceduser@mail.com, 123456)">BasePageNavigation(nonrestirceduser@mail.com, 123456)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="Academy.homepage" class="method navigator-link" hash-for-method="BasePageNavigation(restirceduser@mail.com, 654321)">BasePageNavigation(restirceduser@mail.com, 654321)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="Academy.homepage" class="method navigator-link" hash-for-method="BasePageNavigation(nonrestirceduser@mail.com, 123456)">BasePageNavigation(nonrestirceduser@mail.com, 123456)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,33 +129,51 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Academy.homepage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="BasePageNavigation(nonrestirceduser@mail.com, 123456)">
-                  </a> <!-- BasePageNavigation(nonrestirceduser@mail.com, 123456) -->
-                  <span class="method-name">BasePageNavigation</span>
-                  <span class="parameters">(nonrestirceduser@mail.com, 123456)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="BasePageNavigation(restirceduser@mail.com, 654321)">
                   </a> <!-- BasePageNavigation(restirceduser@mail.com, 654321) -->
                   <span class="method-name">BasePageNavigation</span>
                   <span class="parameters">(restirceduser@mail.com, 654321)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
+	at resources.base.initializeDriver(base.java:32)
+	at Academy.homepage.initialize(homepage.java:24)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BasePageNavigation(nonrestirceduser@mail.com, 123456)">
+                  </a> <!-- BasePageNavigation(nonrestirceduser@mail.com, 123456) -->
+                  <span class="method-name">BasePageNavigation</span>
+                  <span class="parameters">(nonrestirceduser@mail.com, 123456)</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
+	at resources.base.initializeDriver(base.java:32)
+	at Academy.homepage.initialize(homepage.java:24)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
+          </div> <!-- suite-Suite-class-skipped -->
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">Academy.validateTitle</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,10 +182,19 @@
                   <a name="BasePageNavigation">
                   </a> <!-- BasePageNavigation -->
                   <span class="method-name">BasePageNavigation</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
+	at resources.base.initializeDriver(base.java:32)
+	at Academy.validateTitle.initialize(validateTitle.java:24)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -234,21 +261,21 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'BasePageNavigation')
-data.setCell(0, 2, 'Academy.homepage')
-data.setCell(0, 3, 29709);
+data.setCell(0, 2, 'Academy.validateTitle')
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'BasePageNavigation')
 data.setCell(1, 2, 'Academy.homepage')
-data.setCell(1, 3, 18739);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'BasePageNavigation')
-data.setCell(2, 2, 'Academy.validateTitle')
-data.setCell(2, 3, 136);
+data.setCell(2, 2, 'Academy.homepage')
+data.setCell(2, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 51 seconds</span>
+              <span class="suite-total-time">Total running time: 111 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -276,6 +303,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.homepage</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
@@ -283,6 +312,8 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.validateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">initialize</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
@@ -291,29 +322,35 @@ return data;
               <div class="chronological-class-name">Academy.homepage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">BasePageNavigation(nonrestirceduser@mail.com, 123456)</span>
-                <span class="method-start">2878 ms</span>
+                <span class="method-start">67 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.validateTitle</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">BasePageNavigation</span>
-                <span class="method-start">28650 ms</span>
+                <span class="method-start">67 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
-                <span class="method-name">destroyIt</span>
-                <span class="method-start">28797 ms</span>
-              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.homepage</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">BasePageNavigation(restirceduser@mail.com, 654321)</span>
-                <span class="method-start">32590 ms</span>
+                <span class="method-start">81 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Academy.validateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">destroyIt</span>
-                <span class="method-start">51330 ms</span>
+                <span class="method-start">81 ms</span>
+              </div> <!-- configuration-test after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Academy.homepage</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">destroyIt</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
