@@ -18,8 +18,10 @@ public class LandingPage {
 		this.driver = driver;
 	}
 
-	public WebElement getLogin() {
-		return driver.findElement(signin);
+	public LoginPage getLogin() {
+		driver.findElement(signin).click();
+		LoginPage lp = new LoginPage(driver);
+		return lp;
 	}
 
 	public WebElement getText() {

@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import pageObjects.ForgotPassword;
 import pageObjects.LandingPage;
 import pageObjects.LoginPage;
 import resources.base;
@@ -31,13 +32,14 @@ public class homepage extends base {
 
 		driver.get(prop.getProperty("url"));
 		LandingPage l = new LandingPage(driver);
-		l.popUpClose().click();
-		l.getLogin().click(); // it is the same with using by.cssseletor.
-		LoginPage lp = new LoginPage(driver);
+		LoginPage lp = l.getLogin();
 		lp.getEmail().sendKeys(username);
 		lp.getPassword().sendKeys(password);
 		// System.out.println(text);
 		lp.getLoginClick().click();
+		ForgotPassword fp = lp.forgotpassword();
+		fp.getEmail().sendKeys("faruk@actimi.com");
+		fp.sendMeInstructions().click();
 		log.info("Login done");
 
 	}
