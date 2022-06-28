@@ -8,9 +8,9 @@ public class LandingPage {
 
 	public WebDriver driver;
 
-	By signin = By.cssSelector("a[href*='sign_in']");
-	By text = By.xpath("//div//h2[text()='Featured Courses']");
-	By navbar = By.xpath("//div[@class='navbar navbar-default navbar-static-top']");
+	private By signin = By.cssSelector("a[href*='sign_in']");
+	private By text = By.xpath("//div//h2[text()='Featured Courses']");
+	private By navbar = By.xpath("//div[@class='navbar navbar-default navbar-static-top']");
 
 	public LandingPage(WebDriver driver) {
 
@@ -28,6 +28,7 @@ public class LandingPage {
 	}
 
 	public WebElement navBar() {
+		System.out.println("Trying idenified navbar");
 		return driver.findElement(navbar);
 	}
 
