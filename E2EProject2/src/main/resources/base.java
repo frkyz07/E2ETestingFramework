@@ -7,6 +7,7 @@ import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -22,26 +23,32 @@ public class base {
 		prop = new Properties();
 		// System.getProperties("user.dir")
 		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir")+"\\src\\main\\resources\\data.properties");
+				System.getProperty("user.dir") + "\\src\\main\\resources\\data.properties");
 
 		prop.load(fis);
 		// mvn test -Dbrowser=chrome
 		String browserName = System.getProperty("browser");
-		//String browserName = prop.getProperty("browser");
+		// String browserName = prop.getProperty("browser");
 		System.out.println(browserName);
 
-		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\chromedriver.exe");
-			driver = new ChromeDriver();
-			// execute in chrome driver
+		if (browserName.contains("chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					System.getProperty("user.dir") + "\\src\\main\\resources\\chromedriver.exe");
+			ChromeOptions options = new ChromeOptions();
+			if (browserName.contains("headless")) {
+				options.addArguments("headless");
+			}
+			driver = new ChromeDriver(options);
 
 		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",
+					System.getProperty("user.dir") + "\\src\\main\\resources\\geckodriver.exe");
 			driver = new FirefoxDriver();
 			// firefox code
-			
+
 		} else if (browserName.equals("edge")) {
-			System.setProperty("webdriver.edge.driver", System.getProperty("user.dir")+"\\src\\main\\resources\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver",
+					System.getProperty("user.dir") + "\\src\\main\\resources\\msedgedriver.exe");
 			driver = new FirefoxDriver();
 		}
 
