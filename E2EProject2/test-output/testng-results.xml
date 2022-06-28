@@ -2,19 +2,19 @@
 <testng-results ignored="0" total="3" passed="0" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-27T19:34:01 TRT" name="Suite" finished-at="2022-06-27T19:34:01 TRT" duration-ms="111">
+  <suite started-at="2022-06-28T15:53:50 TRT" name="Suite" finished-at="2022-06-28T15:53:51 TRT" duration-ms="157">
     <groups>
     </groups>
-    <test started-at="2022-06-27T19:34:01 TRT" name="validateTitle" finished-at="2022-06-27T19:34:01 TRT" duration-ms="104">
+    <test started-at="2022-06-28T15:53:50 TRT" name="validateTitle" finished-at="2022-06-28T15:53:51 TRT" duration-ms="157">
       <class name="Academy.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T19:34:01 TRT" name="initialize" finished-at="2022-06-27T19:34:01 TRT" duration-ms="9" status="FAIL">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-28T15:53:50 TRT" name="initialize" finished-at="2022-06-28T15:53:50 TRT" duration-ms="9" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-at resources.base.initializeDriver(base.java:32)
+at resources.base.initializeDriver(base.java:33)
 at Academy.validateTitle.initialize(validateTitle.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -41,14 +41,14 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T19:34:01 TRT" name="BasePageNavigation" finished-at="2022-06-27T19:34:01 TRT" duration-ms="0" status="SKIP">
+        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-28T15:53:50 TRT" name="BasePageNavigation" finished-at="2022-06-28T15:53:50 TRT" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-at resources.base.initializeDriver(base.java:32)
+at resources.base.initializeDriver(base.java:33)
 at Academy.validateTitle.initialize(validateTitle.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -75,22 +75,22 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-27T19:34:01 TRT" name="destroyIt" finished-at="1970-01-01T02:00:00 TRT" duration-ms="-1656347641145" status="SKIP">
+        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@2187fff7]" started-at="2022-06-28T15:53:51 TRT" name="destroyIt" finished-at="1970-01-01T02:00:00 TRT" duration-ms="-1656420831038" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyIt -->
       </class> <!-- Academy.validateTitle -->
     </test> <!-- validateTitle -->
-    <test started-at="2022-06-27T19:34:01 TRT" name="homepage" finished-at="2022-06-27T19:34:01 TRT" duration-ms="111">
+    <test started-at="2022-06-28T15:53:50 TRT" name="homepage" finished-at="2022-06-28T15:53:51 TRT" duration-ms="139">
       <class name="Academy.homepage">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T19:34:01 TRT" name="initialize" finished-at="2022-06-27T19:34:01 TRT" duration-ms="9" status="FAIL">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-28T15:53:50 TRT" name="initialize" finished-at="2022-06-28T15:53:50 TRT" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "String.equals(Object)" because "browserName" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-at resources.base.initializeDriver(base.java:32)
+at resources.base.initializeDriver(base.java:33)
 at Academy.homepage.initialize(homepage.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -117,7 +117,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T19:34:01 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-27T19:34:01 TRT" duration-ms="0" status="SKIP">
+        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-28T15:53:51 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-28T15:53:51 TRT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-at resources.base.initializeDriver(base.java:32)
+at resources.base.initializeDriver(base.java:33)
 at Academy.homepage.initialize(homepage.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -163,7 +163,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T19:34:01 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-27T19:34:01 TRT" duration-ms="0" status="SKIP">
+        <test-method signature="BasePageNavigation(java.lang.String,java.lang.String)[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-28T15:53:51 TRT" name="BasePageNavigation" data-provider="getData" finished-at="2022-06-28T15:53:51 TRT" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -182,7 +182,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equals(Object)" because "browserName" is null
-at resources.base.initializeDriver(base.java:32)
+at resources.base.initializeDriver(base.java:33)
 at Academy.homepage.initialize(homepage.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -209,7 +209,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-27T19:34:01 TRT" name="destroyIt" finished-at="1970-01-01T02:00:00 TRT" duration-ms="-1656347641157" status="SKIP">
+        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.homepage@32057e6]" started-at="2022-06-28T15:53:51 TRT" name="destroyIt" finished-at="1970-01-01T02:00:00 TRT" duration-ms="-1656420831030" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyIt -->

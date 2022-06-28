@@ -142,7 +142,7 @@
                   <span class="method-name">BasePageNavigation</span>
                   <span class="parameters">(restirceduser@mail.com, 654321)</span>
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
-	at resources.base.initializeDriver(base.java:32)
+	at resources.base.initializeDriver(base.java:33)
 	at Academy.homepage.initialize(homepage.java:24)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -159,7 +159,7 @@
                   <span class="method-name">BasePageNavigation</span>
                   <span class="parameters">(nonrestirceduser@mail.com, 123456)</span>
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
-	at resources.base.initializeDriver(base.java:32)
+	at resources.base.initializeDriver(base.java:33)
 	at Academy.homepage.initialize(homepage.java:24)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -183,7 +183,7 @@
                   </a> <!-- BasePageNavigation -->
                   <span class="method-name">BasePageNavigation</span>
                   <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;String.equals(Object)&quot; because &quot;browserName&quot; is null
-	at resources.base.initializeDriver(base.java:32)
+	at resources.base.initializeDriver(base.java:33)
 	at Academy.validateTitle.initialize(validateTitle.java:24)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -275,7 +275,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 111 ms</span>
+              <span class="suite-total-time">Total running time: 157 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -301,15 +301,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Academy.homepage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">initialize</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">Academy.validateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <img src="failed.png">
@@ -320,37 +311,40 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.homepage</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">BasePageNavigation(nonrestirceduser@mail.com, 123456)</span>
-                <span class="method-start">67 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-test before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">initialize</span>
+                <span class="method-start">50 ms</span>
+              </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.validateTitle</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">BasePageNavigation</span>
-                <span class="method-start">67 ms</span>
+                <span class="method-start">82 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.homepage</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">BasePageNavigation(restirceduser@mail.com, 654321)</span>
-                <span class="method-start">81 ms</span>
+                <span class="method-name">BasePageNavigation(nonrestirceduser@mail.com, 123456)</span>
+                <span class="method-start">93 ms</span>
               </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BasePageNavigation(restirceduser@mail.com, 654321)</span>
+                <span class="method-start">110 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">destroyIt</span>
+                <span class="method-start">122 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Academy.validateTitle</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">destroyIt</span>
-                <span class="method-start">81 ms</span>
-              </div> <!-- configuration-test after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">Academy.homepage</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
-                <span class="method-name">destroyIt</span>
-                <span class="method-start">93 ms</span>
+                <span class="method-start">130 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
