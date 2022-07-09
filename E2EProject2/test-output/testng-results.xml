@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-28T16:48:50 TRT" name="Default suite" finished-at="2022-06-28T16:48:50 TRT" duration-ms="76">
+  <suite started-at="2022-07-09T17:36:12 TRT" name="Default suite" finished-at="2022-07-09T17:36:12 TRT" duration-ms="97">
     <groups>
     </groups>
-    <test started-at="2022-06-28T16:48:50 TRT" name="Default test" finished-at="2022-06-28T16:48:50 TRT" duration-ms="76">
+    <test started-at="2022-07-09T17:36:12 TRT" name="Default test" finished-at="2022-07-09T17:36:12 TRT" duration-ms="97">
       <class name="Academy.validateTitle">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@25e2a451]" started-at="2022-06-28T16:48:50 TRT" name="initialize" finished-at="2022-06-28T16:48:50 TRT" duration-ms="8" status="FAIL">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:Academy.validateTitle@25e2a451]" started-at="2022-07-09T17:36:12 TRT" name="initialize" finished-at="2022-07-09T17:36:12 TRT" duration-ms="12" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "browserName" is null]]>
@@ -46,7 +46,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@25e2a451]" started-at="2022-06-28T16:48:50 TRT" name="BasePageNavigation" finished-at="2022-06-28T16:48:50 TRT" duration-ms="0" status="SKIP">
+        <test-method signature="BasePageNavigation()[pri:0, instance:Academy.validateTitle@25e2a451]" started-at="2022-07-09T17:36:12 TRT" name="BasePageNavigation" finished-at="2022-07-09T17:36:12 TRT" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "browserName" is null]]>
@@ -85,7 +85,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BasePageNavigation -->
-        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@25e2a451]" started-at="2022-06-28T16:48:50 TRT" name="destroyIt" finished-at="1970-01-01T02:00:00 TRT" duration-ms="-1656424130440" status="SKIP">
+        <test-method is-config="true" signature="destroyIt()[pri:0, instance:Academy.validateTitle@25e2a451]" started-at="2022-07-09T17:36:12 TRT" name="destroyIt" finished-at="1970-01-01T02:00:00 TRT" duration-ms="-1657377372659" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyIt -->
