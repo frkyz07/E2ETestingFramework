@@ -17,6 +17,8 @@ import org.openqa.selenium.WebDriver;
 public class validateTitle extends resources.base {
 	public WebDriver driver;
 	public static Logger log = LogManager.getLogger(resources.base.class.getName());
+	LandingPage l ;
+	
 
 	@BeforeTest
 	public void initialize() throws IOException {
@@ -32,10 +34,23 @@ public class validateTitle extends resources.base {
 	public void BasePageNavigation() throws IOException {
 		// one is inheritance
 		// creating object of the class
-		LandingPage l = new LandingPage(driver);
+		l = new LandingPage(driver);
 		// l.popUpClose().click();
 		String title = l.getText().getText();
 		Assert.assertEquals(title, "FEATURED COURSES");
+		Assert.assertTrue(l.navBar().isDisplayed());
+		Assert.assertEquals(l.navBar().isDisplayed(), true);
+		log.info("Succesfully validated text messages");
+ 
+	}
+	@Test
+	public void ValidateHeader() throws IOException {
+		// one is inheritance
+		// creating object of the class
+		l = new LandingPage(driver);
+		// l.popUpClose().click();
+		String title = l.getHeader().getText();
+		Assert.assertEquals(title, "AN ACADEMY TO LEARN EVERYTHING ABOUT TESTING");
 		Assert.assertTrue(l.navBar().isDisplayed());
 		Assert.assertEquals(l.navBar().isDisplayed(), true);
 		log.info("Succesfully validated text messages");
